@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background"
+    tools:context=".persyaratan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#25446F"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:alpha="0.3"
+        android:layout_margin="20dp">
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/top_border_konsolidasi" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="44dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/gambar"/>
+
+    <TextView
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="31dp"
+        android:text="Persiapkan berkas yang akan di upload !"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="31dp"
+        android:text="1.Scan KK"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    />
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="31dp"
+        android:text="2.Scan KTP"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="150dp"
+        android:layout_weight="1"
+        android:backgroundTint="#4875B7"
+        android:text="Selanjutnya"
+        app:cornerRadius="7dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-1dp"
+            android:background="#25446F"
+            app:itemIconTint="@color/icons_color"
+            app:itemRippleColor="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/navigation_item"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
